@@ -1,5 +1,5 @@
 {
-  "name": "mxcswap-sdk",
+  "name": "@wannseeswap/mxcswap-sdk",
   "license": "MIT",
   "version": "1.0.0",
   "description": "🛠 An SDK for building applications on top of Uniswap.",
@@ -8,7 +8,10 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-sdk.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uniswap/uniswap-sdk.git"
+  },
   "keywords": [
     "uniswap",
     "ethereum"
@@ -55,5 +58,13 @@
     "printWidth": 120,
     "semi": false,
     "singleQuote": true
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Uniswap/uniswap-sdk/issues"
+  },
+  "homepage": "https://github.com/Uniswap/uniswap-sdk#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
 }
