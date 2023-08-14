@@ -5,12 +5,12 @@ export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
   MAINNET = 1,
-  ROPSTEN = 3,
-  RINKEBY = 4,
-  GÖRLI = 5,
-  KOVAN = 42,
+  // ROPSTEN = 3,
+  // RINKEBY = 4,
+  // GÖRLI = 5,
+  // KOVAN = 42,
+  // GANACHE = 1337,
   WANNSEE = 5167003,
-  GANACHE = 1337,
   HARDHAT = 31337,
   WANNSEEMAINNET = 18686
 }
@@ -26,7 +26,17 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0x8bC7cf83f5F83781Ec85B78d866222987Ae24657'
+const localChainId: ChainId = process.env.REACT_APP_CHAIN_ID ? parseInt(process.env.REACT_APP_CHAIN_ID) : ChainId.WANNSEEMAINNET
+
+const FACTORY_MAP: { [key in ChainId]: string } = {
+  [ChainId.MAINNET]: "0x",
+  [ChainId.WANNSEE]: '0xCe5d8aCAfFa39E9ECFFCaeEB35Fdc88335840DC8',
+  [ChainId.WANNSEEMAINNET]: "0x8bC7cf83f5F83781Ec85B78d866222987Ae24657",
+  [ChainId.HARDHAT]: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+}
+
+export const FACTORY_ADDRESS = FACTORY_MAP[localChainId]
+console.log(FACTORY_ADDRESS, "FACTORY_ADDRESS")
 
 export const INIT_CODE_HASH = '0x68b0ab55ef20390334a1b36dd4104c1862efe02f05ce932e9180a091500c678a'
 

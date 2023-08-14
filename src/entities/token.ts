@@ -65,24 +65,24 @@ export const WETH = {
     'WETH',
     'Wrapped Ether'
   ),
-  [ChainId.ROPSTEN]: new Token(
-    ChainId.ROPSTEN,
-    '0xc778417E063141139Fce010982780140Aa0cD5Ab',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.RINKEBY]: new Token(
-    ChainId.RINKEBY,
-    '0xc778417E063141139Fce010982780140Aa0cD5Ab',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd0A1E359811322d97991E03f863a0C30C2cF029C', 18, 'WETH', 'Wrapped Ether'),
+  // [ChainId.ROPSTEN]: new Token(
+  //   ChainId.ROPSTEN,
+  //   '0xc778417E063141139Fce010982780140Aa0cD5Ab',
+  //   18,
+  //   'WETH',
+  //   'Wrapped Ether'
+  // ),
+  // [ChainId.RINKEBY]: new Token(
+  //   ChainId.RINKEBY,
+  //   '0xc778417E063141139Fce010982780140Aa0cD5Ab',
+  //   18,
+  //   'WETH',
+  //   'Wrapped Ether'
+  // ),
+  // [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
+  // [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd0A1E359811322d97991E03f863a0C30C2cF029C', 18, 'WETH', 'Wrapped Ether'),
+  // [ChainId.GANACHE]: new Token(ChainId.GANACHE, '0xA7e60fCBD556d79Ad20745CE26cF66118EaCA7C2', 18, 'WMXC', 'Wrapped MXC'),
   [ChainId.WANNSEE]: new Token(ChainId.WANNSEE, '0x6807F4B0D75c59Ef89f0dbEF9841Fb23fFDF105D', 18, 'WMXC', 'Wrapped MXC'),
   [ChainId.WANNSEEMAINNET]: new Token(ChainId.WANNSEEMAINNET, '0xcBCE60BAD702026d6385E5f449e44099A655d14f', 18, 'WMXC', 'Wrapped MXC'),
-  [ChainId.GANACHE]: new Token(ChainId.GANACHE, '0xA7e60fCBD556d79Ad20745CE26cF66118EaCA7C2', 18, 'WMXC', 'Wrapped MXC'),
   [ChainId.HARDHAT]: new Token(ChainId.HARDHAT, '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', 18, 'WMXC', 'Wrapped MXC')
 }
