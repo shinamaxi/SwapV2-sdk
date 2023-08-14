@@ -10,7 +10,9 @@ export enum ChainId {
   GÖRLI = 5,
   KOVAN = 42,
   WANNSEE = 5167003,
-  GANACHE = 1337
+  GANACHE = 1337,
+  HARDHAT = 31337,
+  WANNSEEMAINNET = 18686
 }
 
 export enum TradeType {
@@ -24,7 +26,7 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0x5c1A8B23CB07D65FA46D52E8C0b73f74475c302b'
+export const FACTORY_ADDRESS = '0x8bC7cf83f5F83781Ec85B78d866222987Ae24657'
 
 export const INIT_CODE_HASH = '0x68b0ab55ef20390334a1b36dd4104c1862efe02f05ce932e9180a091500c678a'
 
