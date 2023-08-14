@@ -12,6 +12,6 @@ export {
 } from './constants'
 
 export * from './errors'
-export * from './abis/entities'
+export * from './entities'
 export * from './router'
 export * from './fetcher'
